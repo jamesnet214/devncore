@@ -1,0 +1,45 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ctrls="clr-namespace:NcoreComponent.Controls">
+    <Style TargetType="{x:Type ctrls:CompassNeedle1}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:CompassNeedle1}">
+                    <Path Stretch="Fill" Fill="{DynamicResource Compas.Needle}" Data="F1 M 4788.82,2230.07L 4779.56,2230.07L 4779.56,2276.88C 4779.56,2277.84 4778.78,2278.62 4777.82,2278.62C 4776.86,2278.62 4776.08,2277.84 4776.08,2276.88L 4776.08,2230.07L 4766.82,2230.07L 4777.2,2207.84L 4777.2,2190.62L 4778.44,2190.62L 4778.44,2207.84L 4788.82,2230.07 Z " Width="22" Height="88" RenderTransformOrigin="0.5,0.985" Stroke="{DynamicResource Compas.NeedleThick}" StrokeThickness="0.5"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type ctrls:CompassNeedle2}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:CompassNeedle2}">
+                    <Path Stretch="Fill" Fill="{DynamicResource Compas.Needle}" Data="F1 M 4781.07,2270.61L 4771.81,2270.61L 4771.81,2317.41C 4771.81,2318.37 4771.04,2319.15 4770.08,2319.15C 4769.12,2319.15 4768.34,2318.37 4768.34,2317.41L 4768.34,2270.61L 4759.07,2270.61L 4769.46,2248.37L 4769.46,2231.15L 4770.69,2231.15L 4770.69,2248.37L 4781.07,2270.61 Z M 4770.07,2253.59L 4763.48,2267.7L 4776.66,2267.7L 4770.07,2253.59 Z " Width="22" Height="88" Stroke="{DynamicResource Compas.NeedleThick}" StrokeThickness="0.5"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type ctrls:CompassNeedle3}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:CompassNeedle3}">
+                    <Viewbox Width="37" Height="82">
+                        <Canvas Width="37" Height="81.9312">
+                            <Path Width="25" Height="76.999" Canvas.Left="5.99951" Canvas.Top="4.93213" Stretch="Fill" StrokeThickness="1" StrokeLineJoin="Round" Stroke="{DynamicResource Compas.ShipThick}" Fill="{DynamicResource Compas.ShipBack}" Data="F1 M 30.9995,78.9312C 30.9995,80.5881 29.9165,81.9312 28.5806,81.9312L 8.41895,81.9312C 7.08252,81.9312 5.99951,80.5881 5.99951,78.9312L 5.99951,38.3506L 6.04639,38.3154C 6.04639,38.3154 6.24854,8.82178 17.9419,5.00488L 18.1558,4.93213L 18.8442,4.93213L 19.0581,5.00488C 30.7515,8.82178 30.9536,38.3154 30.9531,38.3154L 30.9995,38.3501L 30.9995,78.9312 Z "/>
+                            <Path Width="37" Height="44.0503" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FF373737" Data="F1 M 37,42.8149L 37,44.0503L 0,44.0503L 0,42.8149L 17.8828,42.8149L 17.8828,0L 19.1177,0L 19.1177,42.8149L 37,42.8149 Z "/>
+                        </Canvas>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type ctrls:CTriangleNeedle}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:CTriangleNeedle}">
+                    <Path Stretch="Fill" Fill="#9F9F9F" Data="F1 M -5886.33,7319.44L -5891.96,7332.74L -5880.7,7332.74L -5886.33,7319.44 Z "/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
