@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:NcoreComponent"
         mc:Ignorable="d"
         xmlns:ctrls="clr-namespace:NcoreComponent.Controls"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Width="1920" Height="1080"  Background="{DynamicResource Background}">
     <Grid>
+        <ctrls:Compass/>
     </Grid>
 </Window>
