@@ -15,24 +15,13 @@ using System.Windows.Shapes;
 
 namespace NcoreComponent.Controls
 {
-    /// <summary>
-    /// Compass.xaml에 대한 상호 작용 논리
-    /// </summary>
     public partial class Compass : UserControl
     {
         #region Variables
 
-        /// <summary>
-        /// 캔버스 중앙 X좌표
-        /// </summary>
         double cx;
-        /// <summary>
-        /// 캔버스 중앙 Y좌표
-        /// </summary>
         double cy;
-        // 가장 바깥
         double label_R;
-
         double bigCircle_R;
         double outCircle_R;
         double tiny_R;
@@ -40,8 +29,6 @@ namespace NcoreComponent.Controls
         const int degreeOffset = 270;
         const int primaryTick = 45;
         const int SecondTick = 3;
-
-        
         #endregion
 
         public Compass()
@@ -65,10 +52,8 @@ namespace NcoreComponent.Controls
             {
                 double cos = (double)Math.Cos(DegreesToRadians(i + degreeOffset));
                 double sin = (double)Math.Sin(DegreesToRadians(i + degreeOffset));
-
                 double x1 = cx + outCircle_R * cos;
                 double y1 = cy + outCircle_R * sin;
-
                 double x2 = cx + inCircle_R * cos;
                 double y2 = cy + inCircle_R * sin;
 
@@ -88,7 +73,6 @@ namespace NcoreComponent.Controls
             {
                 double cos = (double)Math.Cos(DegreesToRadians(i + degreeOffset));
                 double sin = (double)Math.Sin(DegreesToRadians(i + degreeOffset));
-
                 double x1 = cx + inCircle_R * cos;
                 double y1 = cy + inCircle_R * sin;
                 double x2 = 0;
@@ -96,40 +80,28 @@ namespace NcoreComponent.Controls
 
                 if (i % primaryTick == 0)
                 {
-                    // 45도씩 오는거
+                    // 45도
                     x2 = cx + outCircle_R * cos;
                     y2 = cy + outCircle_R * sin;
-
                     double x3 = cx + bigCircle_R * cos;
                     double y3 = cy + bigCircle_R * sin;
 
                     Label label = new Label();
-                    label.Content = $"{i} 도";
-                    label.Foreground = Brushes.Blue;
-
+                    label.Content = $"{(DirectionType)i}";
+                    label.SetResourceReference(ForegroundProperty, "Compas.Label");
                     label.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-
                     Size s = label.DesiredSize;
-                    
-
-
                     Canvas.SetLeft(label, x3 - (s.Width / 2));
                     Canvas.SetTop(label, y3 - (s.Height / 2));
-                    canvas.Children.Add(label);
 
+                    canvas.Children.Add(label);
                 }
                 else
                 {
-                    // 3도씩오는거
+                    // 3도
                     x2 = cx + tiny_R * cos;
                     y2 = cy + tiny_R * sin;
                 }
-
-                //double x1 = cx + gauge_R * cos;
-                //double y1 = cy + gauge_R * sin;
-
-                //double x2 = cx + small_R * cos;
-                //double y2 = cy + small_R * sin;
 
                 Line line = new Line();
                 line.SetResourceReference(Shape.StrokeProperty, "Compas.Mark");
