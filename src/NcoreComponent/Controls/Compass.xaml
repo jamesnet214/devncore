@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:NcoreComponent.Controls"
              mc:Ignorable="d" x:Name="uc"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Canvas x:Name="canvas" Width="230" Height="230" >
+    <Canvas x:Name="canvas" Width="230" Height="230" Background="Red" >
         
     </Canvas>
 </UserControl>

@@ -29,16 +29,32 @@ namespace NcoreComponent.Controls
         const int degreeOffset = 270;
         const int primaryTick = 45;
         const int SecondTick = 3;
+        private CTriangleNeedle needle4;
         #endregion
 
         public Compass()
         {
             InitializeComponent();
             SetScale();
+
+            Triangle();
         }
+
+
+        private void Triangle()
+        {
+            needle4.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity)); 
+            Canvas.SetLeft(needle4, cx - (needle4.DesiredSize.Width / 2 ));
+        }
+        
+        #region 콤파스
 
         private void SetScale()
         {
+
+            needle4 = new CTriangleNeedle();
+            canvas.Children.Add(needle4);
+
             cx = canvas.Width / 2;
             cy = canvas.Height / 2;
             label_R = cx;
@@ -121,6 +137,7 @@ namespace NcoreComponent.Controls
 
 
         }
+        #endregion
 
         #region DegreesToRadians: 각도 계산
 
