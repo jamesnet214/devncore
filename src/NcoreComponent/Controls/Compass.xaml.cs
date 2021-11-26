@@ -43,7 +43,9 @@ namespace NcoreComponent.Controls
 
         private void Triangle()
         {
-            needle4.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity)); 
+            needle4 = new CTriangleNeedle();
+            canvas.Children.Add(needle4);
+            needle4.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
             Canvas.SetLeft(needle4, cx - (needle4.DesiredSize.Width / 2 ));
         }
         
@@ -51,10 +53,6 @@ namespace NcoreComponent.Controls
 
         private void SetScale()
         {
-
-            needle4 = new CTriangleNeedle();
-            canvas.Children.Add(needle4);
-
             cx = canvas.Width / 2;
             cy = canvas.Height / 2;
             label_R = cx;
@@ -130,12 +128,6 @@ namespace NcoreComponent.Controls
 
                 canvas.Children.Add(line);
             }
-
-
-
-
-
-
         }
         #endregion
 
