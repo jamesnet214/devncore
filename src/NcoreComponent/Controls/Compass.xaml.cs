@@ -38,15 +38,17 @@ namespace NcoreComponent.Controls
         public Compass()
         {
             InitializeComponent();
-            SetScale();
 
+            SetScale();
+            Needle3();
+            Needle();
+            Needle2();
             Triangle();
 
-            Needle();
 
-            Needle2();
 
-            Needle3();
+
+            
         }
 
         private void Needle3()
@@ -54,6 +56,10 @@ namespace NcoreComponent.Controls
             compassNeedle3 = new CompassNeedle3();
             canvas.Children.Add(compassNeedle3);
 
+            compassNeedle3.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+
+            Canvas.SetLeft(compassNeedle3, cx - compassNeedle3.DesiredSize.Width / 2 );
+            Canvas.SetTop(compassNeedle3, cy - compassNeedle3.DesiredSize.Height / 2);
 
         }
 
