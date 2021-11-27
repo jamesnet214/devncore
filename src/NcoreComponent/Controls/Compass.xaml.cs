@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -17,7 +19,60 @@ namespace NcoreComponent.Controls
 {
     public partial class Compass : UserControl
     {
+        #region DValue1
+
+        public static readonly DependencyProperty DValue1Property = DependencyProperty.Register(
+       "DValue1", typeof(double), typeof(Compass), new PropertyMetadata(0.0, OnDValueChangedCallBack));
+
+        public double DValue1
+        {
+            get { return (double)GetValue(DValue1Property); }
+            set { SetValue(DValue1Property, value); }
+        }
+        #endregion
+
+        private static void OnDValueChangedCallBack(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+        {
+            Compass c = sender as Compass;
+            var propertyName = e.Property.Name;
+
+            double value = 0;
+            if (e.NewValue != null)
+                value = (double)e.NewValue;
+
+
+            c.ValueChanged(value, propertyName);
+        }
+
+        private void ValueChanged(double value, string propertyName)
+        {
+            switch (propertyName)
+            {
+                case "DValue1":
+                    SetAnimation(value, compassNeedle1);
+                    break;
+            }
+        }
+
+        private void SetAnimation(double value, CompassNeedle1 needleItem)
+        {
+            if (needleItem.GetType() == typeof(CompassNeedle1))
+            {
+                RotateTransform rt = new RotateTransform(angle1, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight);
+                DoubleAnimation a = new DoubleAnimation(angle1, angle1 = value, new TimeSpan(0, 0, 0, 3));
+
+                compassNeedle1.RenderTransform = rt;
+
+                rt.BeginAnimation(RotateTransform.AngleProperty, a);
+            }
+        }
+
         #region Variables
+
+        // 각도변수
+        double angle1;
+
+
 
         double cx;
         double cy;
@@ -39,15 +94,30 @@ namespace NcoreComponent.Controls
         {
             InitializeComponent();
 
+            Thread thread = new Thread(() =>
+            {
+                while(true)
+                {                
+                    int i = new Random().Next(0, 361);
+                    Thread.Sleep(3000);
+                    
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        RotateTransform rt = new RotateTransform(angle1, needle4.ActualWidth / 2, needle4.ActualHeight + inCircle_R);
+                        DoubleAnimation a = new DoubleAnimation(angle1, angle1 = i, new TimeSpan(0, 0, 0, 3));
+                        needle4.RenderTransform = rt;
+                        rt.BeginAnimation(RotateTransform.AngleProperty, a);
+                    });
+                }
+            });
+            thread.Start();
+            thread.IsBackground = true;
+
             SetScale();
             Needle3();
             Needle();
             Needle2();
             Triangle();
-
-
-
-
             
         }
 
