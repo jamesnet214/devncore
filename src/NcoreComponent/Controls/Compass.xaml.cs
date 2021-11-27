@@ -30,6 +30,9 @@ namespace NcoreComponent.Controls
         const int primaryTick = 45;
         const int SecondTick = 3;
         private CTriangleNeedle needle4;
+        private CompassNeedle1 compassNeedle1;
+        private CompassNeedle2 compassNeedle2;
+        private CompassNeedle3 compassNeedle3;
         #endregion
 
         public Compass()
@@ -38,8 +41,46 @@ namespace NcoreComponent.Controls
             SetScale();
 
             Triangle();
+
+            Needle();
+
+            Needle2();
+
+            Needle3();
         }
 
+        private void Needle3()
+        {
+            compassNeedle3 = new CompassNeedle3();
+            canvas.Children.Add(compassNeedle3);
+
+
+        }
+
+        private void Needle2()
+        {
+            compassNeedle2 = new CompassNeedle2();
+            canvas.Children.Add(compassNeedle2);
+
+            compassNeedle2.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+
+            Canvas.SetLeft(compassNeedle2, cx - compassNeedle2.DesiredSize.Width / 2 );
+            Canvas.SetTop(compassNeedle2, cy - compassNeedle2.DesiredSize.Height);
+
+        }
+
+        private void Needle()
+        {
+            compassNeedle1 = new CompassNeedle1();
+            canvas.Children.Add(compassNeedle1);
+
+            compassNeedle1.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+
+            
+            Canvas.SetLeft(compassNeedle1, cx - compassNeedle1.DesiredSize.Width / 2);
+            Canvas.SetTop(compassNeedle1, cy - compassNeedle1.DesiredSize.Height);
+
+        }
 
         private void Triangle()
         {
@@ -47,6 +88,7 @@ namespace NcoreComponent.Controls
             canvas.Children.Add(needle4);
             needle4.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
             Canvas.SetLeft(needle4, cx - (needle4.DesiredSize.Width / 2 ));
+            Canvas.SetTop(needle4, cy - inCircle_R - needle4.DesiredSize.Height);
         }
         
         #region 콤파스
