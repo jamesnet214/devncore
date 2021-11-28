@@ -31,9 +31,48 @@ namespace NcoreComponent.Controls
         }
         #endregion
 
+        #region DValue2
+
+        public static readonly DependencyProperty DValue2Property = DependencyProperty.Register(
+       "DValue2", typeof(double), typeof(Compass), new PropertyMetadata(0.0, OnDValueChangedCallBack));
+
+        public double DValue2
+        {
+            get { return (double)GetValue(DValue2Property); }
+            set { SetValue(DValue2Property, value); }
+        }
+        #endregion
+
+        #region DValue3
+
+        public static readonly DependencyProperty DValue3Property = DependencyProperty.Register(
+       "DValue3", typeof(double), typeof(Compass), new PropertyMetadata(0.0, OnDValueChangedCallBack));
+
+        public double DValue3
+        {
+            get { return (double)GetValue(DValue3Property); }
+            set { SetValue(DValue3Property, value); }
+        }
+        #endregion
+
+        #region DValue4
+
+        public static readonly DependencyProperty DValue4Property = DependencyProperty.Register(
+       "DValue4", typeof(double), typeof(Compass), new PropertyMetadata(0.0, OnDValueChangedCallBack));
+
+        public double DValue4
+        {
+            get { return (double)GetValue(DValue4Property); }
+            set { SetValue(DValue4Property, value); }
+        }
+        #endregion
+
         #region Variables
 
         double angle1;
+        double angle2;
+        double angle3;
+        double angle4;
         double cx;
         double cy;
         double label_R;
@@ -147,13 +186,23 @@ namespace NcoreComponent.Controls
                 case "DValue1":
                     SetAnimation(value, compassNeedle1);
                     break;
+                case "DValue2":
+                    SetAnimation(value, compassNeedle2);
+                    break;
+                case "DValue3":
+                    SetAnimation(value, compassNeedle3);
+                    break;
+                case "DValue4":
+                    SetAnimation(value, compassNeedle1);
+                    break;
+
             }
         }
         #endregion
 
         #region SetAnimation
 
-        private void SetAnimation(double value, CompassNeedle1 needleItem)
+        private void SetAnimation(double value, Control needleItem)
         {
             if (needleItem.GetType() == typeof(CompassNeedle1))
             {
@@ -161,6 +210,36 @@ namespace NcoreComponent.Controls
                 DoubleAnimation a = new DoubleAnimation(angle1, angle1 = value, new TimeSpan(0, 0, 0, 3));
 
                 compassNeedle1.RenderTransform = rt;
+
+                rt.BeginAnimation(RotateTransform.AngleProperty, a);
+            }
+            else if (needleItem.GetType() == typeof(CompassNeedle2))
+            {
+                RotateTransform rt = new RotateTransform(angle2, compassNeedle2.ActualWidth / 2, compassNeedle2.ActualHeight);
+                DoubleAnimation a = new DoubleAnimation(angle2, angle2 = value, new TimeSpan(0, 0, 0, 3));
+
+                compassNeedle2.RenderTransform = rt;
+
+                rt.BeginAnimation(RotateTransform.AngleProperty, a);
+            }
+            else if (needleItem.GetType() == typeof(CompassNeedle3))
+            {
+
+                RotateTransform rt = new RotateTransform(angle3, compassNeedle3.ActualWidth / 2, (compassNeedle3.ActualHeight / 2) + 1);
+                DoubleAnimation a = new DoubleAnimation(angle3, angle3 = value, new TimeSpan(0, 0, 0, 3));
+
+                compassNeedle3.RenderTransform = rt;
+
+                rt.BeginAnimation(RotateTransform.AngleProperty, a);
+            }
+            else if (needleItem.GetType() == typeof(CTriangleNeedle))
+            {
+
+                //RotateTransform rt = new RotateTransform(angle4, needle4.ActualWidth / 2, needle4.ActualHeight);
+                RotateTransform rt = new RotateTransform(angle4, needle4.ActualWidth / 2, needle4.ActualHeight + label_R);
+                DoubleAnimation a = new DoubleAnimation(angle4, angle4 = value, new TimeSpan(0, 0, 0, 3));
+
+                needle4.RenderTransform = rt;
 
                 rt.BeginAnimation(RotateTransform.AngleProperty, a);
             }

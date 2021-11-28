@@ -8,7 +8,6 @@ namespace NcoreComponent.Controls
 {
     public enum DirectionType
     {
-        
         N = 0,
         NE = 45,
         E = 90,
