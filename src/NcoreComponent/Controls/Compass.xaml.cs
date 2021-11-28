@@ -31,49 +31,9 @@ namespace NcoreComponent.Controls
         }
         #endregion
 
-        private static void OnDValueChangedCallBack(DependencyObject sender, DependencyPropertyChangedEventArgs e)
-        {
-            Compass c = sender as Compass;
-            var propertyName = e.Property.Name;
-
-            double value = 0;
-            if (e.NewValue != null)
-                value = (double)e.NewValue;
-
-
-            c.ValueChanged(value, propertyName);
-        }
-
-        private void ValueChanged(double value, string propertyName)
-        {
-            switch (propertyName)
-            {
-                case "DValue1":
-                    SetAnimation(value, compassNeedle1);
-                    break;
-            }
-        }
-
-        private void SetAnimation(double value, CompassNeedle1 needleItem)
-        {
-            if (needleItem.GetType() == typeof(CompassNeedle1))
-            {
-                RotateTransform rt = new RotateTransform(angle1, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight);
-                DoubleAnimation a = new DoubleAnimation(angle1, angle1 = value, new TimeSpan(0, 0, 0, 3));
-
-                compassNeedle1.RenderTransform = rt;
-
-                rt.BeginAnimation(RotateTransform.AngleProperty, a);
-            }
-        }
-
         #region Variables
 
-        // 각도변수
         double angle1;
-
-
-
         double cx;
         double cy;
         double label_R;
@@ -84,11 +44,13 @@ namespace NcoreComponent.Controls
         const int degreeOffset = 270;
         const int primaryTick = 45;
         const int SecondTick = 3;
-        private CTriangleNeedle needle4;
         private CompassNeedle1 compassNeedle1;
         private CompassNeedle2 compassNeedle2;
         private CompassNeedle3 compassNeedle3;
+        private CTriangleNeedle needle4;
         #endregion
+
+        #region Constructor
 
         public Compass()
         {
@@ -115,47 +77,42 @@ namespace NcoreComponent.Controls
 
             SetScale();
             Needle3();
-            Needle();
+            Needle1();
             Needle2();
             Triangle();
-            
         }
+        #endregion
 
-        private void Needle3()
+        #region Needles
+
+        private void Needle1()
         {
-            compassNeedle3 = new CompassNeedle3();
-            canvas.Children.Add(compassNeedle3);
+            compassNeedle1 = new CompassNeedle1();
+            canvas.Children.Add(compassNeedle1);
+            compassNeedle1.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
 
-            compassNeedle3.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-
-            Canvas.SetLeft(compassNeedle3, cx - compassNeedle3.DesiredSize.Width / 2 );
-            Canvas.SetTop(compassNeedle3, cy - compassNeedle3.DesiredSize.Height / 2);
-
+            Canvas.SetLeft(compassNeedle1, cx - compassNeedle1.DesiredSize.Width / 2);
+            Canvas.SetTop(compassNeedle1, cy - compassNeedle1.DesiredSize.Height);
         }
 
         private void Needle2()
         {
             compassNeedle2 = new CompassNeedle2();
             canvas.Children.Add(compassNeedle2);
-
             compassNeedle2.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
 
-            Canvas.SetLeft(compassNeedle2, cx - compassNeedle2.DesiredSize.Width / 2 );
+            Canvas.SetLeft(compassNeedle2, cx - compassNeedle2.DesiredSize.Width / 2);
             Canvas.SetTop(compassNeedle2, cy - compassNeedle2.DesiredSize.Height);
-
         }
 
-        private void Needle()
+        private void Needle3()
         {
-            compassNeedle1 = new CompassNeedle1();
-            canvas.Children.Add(compassNeedle1);
+            compassNeedle3 = new CompassNeedle3();
+            canvas.Children.Add(compassNeedle3);
+            compassNeedle3.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
 
-            compassNeedle1.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
-
-            
-            Canvas.SetLeft(compassNeedle1, cx - compassNeedle1.DesiredSize.Width / 2);
-            Canvas.SetTop(compassNeedle1, cy - compassNeedle1.DesiredSize.Height);
-
+            Canvas.SetLeft(compassNeedle3, cx - compassNeedle3.DesiredSize.Width / 2 );
+            Canvas.SetTop(compassNeedle3, cy - compassNeedle3.DesiredSize.Height / 2);
         }
 
         private void Triangle()
@@ -166,8 +123,51 @@ namespace NcoreComponent.Controls
             Canvas.SetLeft(needle4, cx - (needle4.DesiredSize.Width / 2 ));
             Canvas.SetTop(needle4, cy - inCircle_R - needle4.DesiredSize.Height);
         }
-        
-        #region 콤파스
+        #endregion
+
+        #region DVvalueChanged
+
+        private static void OnDValueChangedCallBack(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+        {
+            Compass c = sender as Compass;
+            var propertyName = e.Property.Name;
+
+            double value = 0;
+            if (e.NewValue != null)
+                value = (double)e.NewValue;
+
+
+            c.ValueChanged(value, propertyName);
+        }
+
+        private void ValueChanged(double value, string propertyName)
+        {
+            switch (propertyName)
+            {
+                case "DValue1":
+                    SetAnimation(value, compassNeedle1);
+                    break;
+            }
+        }
+        #endregion
+
+        #region SetAnimation
+
+        private void SetAnimation(double value, CompassNeedle1 needleItem)
+        {
+            if (needleItem.GetType() == typeof(CompassNeedle1))
+            {
+                RotateTransform rt = new RotateTransform(angle1, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight);
+                DoubleAnimation a = new DoubleAnimation(angle1, angle1 = value, new TimeSpan(0, 0, 0, 3));
+
+                compassNeedle1.RenderTransform = rt;
+
+                rt.BeginAnimation(RotateTransform.AngleProperty, a);
+            }
+        }
+        #endregion
+
+        #region SetScale
 
         private void SetScale()
         {
@@ -249,7 +249,7 @@ namespace NcoreComponent.Controls
         }
         #endregion
 
-        #region DegreesToRadians: 각도 계산
+        #region DegreesToRadians
 
         private double DegreesToRadians(double degrees)
         {
