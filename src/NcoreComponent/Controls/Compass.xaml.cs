@@ -99,29 +99,30 @@ namespace NcoreComponent.Controls
             {
                 while(true)
                 {                
-                    int i = new Random().Next(0, 361);
+                    RandomCount();
+
                     Thread.Sleep(3000);
                     
                     this.Dispatcher.Invoke(() =>
                     {
                         RotateTransform rt = new RotateTransform(angle1, needle4.ActualWidth / 2, needle4.ActualHeight + inCircle_R);
-                        DoubleAnimation a = new DoubleAnimation(angle1, angle1 = i, new TimeSpan(0, 0, 0, 3));
+                        DoubleAnimation a = new DoubleAnimation(angle1, angle1 = RandomCount(), new TimeSpan(0, 0, 0, 3));
                         needle4.RenderTransform = rt;
                         rt.BeginAnimation(RotateTransform.AngleProperty, a);
 
-                        RotateTransform rt2 = new RotateTransform(angle2, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight + inCircle_R);
-                        DoubleAnimation a2 = new DoubleAnimation(angle2, angle2 = i, new TimeSpan(0, 0, 0, 3));
+                        RotateTransform rt2 = new RotateTransform(angle2, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight);
+                        DoubleAnimation a2 = new DoubleAnimation(angle2, angle2 = RandomCount(), new TimeSpan(0, 0, 0, 3));
                         compassNeedle1.RenderTransform = rt2;
                         rt2.BeginAnimation(RotateTransform.AngleProperty, a2);
 
-                        RotateTransform rt3 = new RotateTransform(angle3, compassNeedle2.ActualWidth / 2, compassNeedle2.ActualHeight + inCircle_R);
-                        DoubleAnimation a3 = new DoubleAnimation(angle3, angle3 = i, new TimeSpan(0, 0, 0, 3));
+                        RotateTransform rt3 = new RotateTransform(angle3, compassNeedle2.ActualWidth / 2, compassNeedle2.ActualHeight);
+                        DoubleAnimation a3 = new DoubleAnimation(angle3, angle3 = RandomCount(), new TimeSpan(0, 0, 0, 3));
                         compassNeedle2.RenderTransform = rt3;
                         rt3.BeginAnimation(RotateTransform.AngleProperty, a3);
 
-                        RotateTransform rt4 = new RotateTransform(angle4, compassNeedle3.ActualWidth / 2, compassNeedle3.ActualHeight + inCircle_R);
-                        DoubleAnimation a4 = new DoubleAnimation(angle4, angle4 = i, new TimeSpan(0, 0, 0, 3));
-                        compassNeedle3.RenderTransform = rt3;
+                        RotateTransform rt4 = new RotateTransform(angle4, compassNeedle3.ActualWidth / 2, compassNeedle3.ActualHeight / 2);
+                        DoubleAnimation a4 = new DoubleAnimation(angle4, angle4 = RandomCount(), new TimeSpan(0, 0, 0, 3));
+                        compassNeedle3.RenderTransform = rt4;
                         rt4.BeginAnimation(RotateTransform.AngleProperty, a4);
 
 
@@ -136,6 +137,13 @@ namespace NcoreComponent.Controls
             Needle1();
             Needle2();
             Triangle();
+        }
+
+        private double RandomCount()
+        {
+            double result = new Random().Next(0, 361);
+
+            return result;
         }
         #endregion
 
@@ -210,7 +218,7 @@ namespace NcoreComponent.Controls
                     SetAnimation(value, compassNeedle3);
                     break;
                 case "DValue4":
-                    SetAnimation(value, compassNeedle1);
+                    SetAnimation(value, needle4);
                     break;
 
             }
@@ -233,7 +241,7 @@ namespace NcoreComponent.Controls
             else if (needleItem.GetType() == typeof(CompassNeedle2))
             {
                 RotateTransform rt = new RotateTransform(angle2, compassNeedle2.ActualWidth / 2, compassNeedle2.ActualHeight);
-                DoubleAnimation a = new DoubleAnimation(angle2, angle2 = value, new TimeSpan(0, 0, 0, 3));
+                DoubleAnimation a = new DoubleAnimation(angle2, angle2 = value, new TimeSpan(0, 0, 0, 5));
 
                 compassNeedle2.RenderTransform = rt;
 
@@ -243,7 +251,7 @@ namespace NcoreComponent.Controls
             {
 
                 RotateTransform rt = new RotateTransform(angle3, compassNeedle3.ActualWidth / 2, (compassNeedle3.ActualHeight / 2) + 1);
-                DoubleAnimation a = new DoubleAnimation(angle3, angle3 = value, new TimeSpan(0, 0, 0, 3));
+                DoubleAnimation a = new DoubleAnimation(angle3, angle3 = value, new TimeSpan(0, 0, 0, 7));
 
                 compassNeedle3.RenderTransform = rt;
 
@@ -254,7 +262,7 @@ namespace NcoreComponent.Controls
 
                 //RotateTransform rt = new RotateTransform(angle4, needle4.ActualWidth / 2, needle4.ActualHeight);
                 RotateTransform rt = new RotateTransform(angle4, needle4.ActualWidth / 2, needle4.ActualHeight + label_R);
-                DoubleAnimation a = new DoubleAnimation(angle4, angle4 = value, new TimeSpan(0, 0, 0, 3));
+                DoubleAnimation a = new DoubleAnimation(angle4, angle4 = value, new TimeSpan(0, 0, 0, 10));
 
                 needle4.RenderTransform = rt;
 
