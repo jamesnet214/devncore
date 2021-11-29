@@ -108,6 +108,23 @@ namespace NcoreComponent.Controls
                         DoubleAnimation a = new DoubleAnimation(angle1, angle1 = i, new TimeSpan(0, 0, 0, 3));
                         needle4.RenderTransform = rt;
                         rt.BeginAnimation(RotateTransform.AngleProperty, a);
+
+                        RotateTransform rt2 = new RotateTransform(angle2, compassNeedle1.ActualWidth / 2, compassNeedle1.ActualHeight + inCircle_R);
+                        DoubleAnimation a2 = new DoubleAnimation(angle2, angle2 = i, new TimeSpan(0, 0, 0, 3));
+                        compassNeedle1.RenderTransform = rt2;
+                        rt2.BeginAnimation(RotateTransform.AngleProperty, a2);
+
+                        RotateTransform rt3 = new RotateTransform(angle3, compassNeedle2.ActualWidth / 2, compassNeedle2.ActualHeight + inCircle_R);
+                        DoubleAnimation a3 = new DoubleAnimation(angle3, angle3 = i, new TimeSpan(0, 0, 0, 3));
+                        compassNeedle2.RenderTransform = rt3;
+                        rt3.BeginAnimation(RotateTransform.AngleProperty, a3);
+
+                        RotateTransform rt4 = new RotateTransform(angle4, compassNeedle3.ActualWidth / 2, compassNeedle3.ActualHeight + inCircle_R);
+                        DoubleAnimation a4 = new DoubleAnimation(angle4, angle4 = i, new TimeSpan(0, 0, 0, 3));
+                        compassNeedle3.RenderTransform = rt3;
+                        rt4.BeginAnimation(RotateTransform.AngleProperty, a4);
+
+
                     });
                 }
             });
