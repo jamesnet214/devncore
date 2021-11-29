@@ -69,6 +69,9 @@ namespace NcoreComponent.Controls
 
         #region Variables
 
+        const int degreeOffset = 270;
+        const int primaryTick = 45;
+        const int SecondTick = 3;
         double angle1;
         double angle2;
         double angle3;
@@ -80,9 +83,6 @@ namespace NcoreComponent.Controls
         double outCircle_R;
         double tiny_R;
         double inCircle_R;
-        const int degreeOffset = 270;
-        const int primaryTick = 45;
-        const int SecondTick = 3;
         private CompassNeedle1 compassNeedle1;
         private CompassNeedle2 compassNeedle2;
         private CompassNeedle3 compassNeedle3;
@@ -95,14 +95,24 @@ namespace NcoreComponent.Controls
         {
             InitializeComponent();
 
+            Animation();
+            SetScale();
+            Needle3();
+            Needle1();
+            Needle2();
+            Triangle();
+        }
+
+        private void Animation()
+        {
             Thread thread = new Thread(() =>
             {
-                while(true)
-                {                
+                while (true)
+                {
                     RandomCount();
 
                     Thread.Sleep(3000);
-                    
+
                     this.Dispatcher.Invoke(() =>
                     {
                         RotateTransform rt = new RotateTransform(angle1, needle4.ActualWidth / 2, needle4.ActualHeight + inCircle_R);
@@ -120,7 +130,7 @@ namespace NcoreComponent.Controls
                         compassNeedle2.RenderTransform = rt3;
                         rt3.BeginAnimation(RotateTransform.AngleProperty, a3);
 
-                        RotateTransform rt4 = new RotateTransform(angle4, compassNeedle3.ActualWidth / 2, compassNeedle3.ActualHeight / 2);
+                        RotateTransform rt4 = new RotateTransform(angle4, compassNeedle3.ActualWidth / 2, compassNeedle3.ActualHeight / 2 + 2);
                         DoubleAnimation a4 = new DoubleAnimation(angle4, angle4 = RandomCount(), new TimeSpan(0, 0, 0, 3));
                         compassNeedle3.RenderTransform = rt4;
                         rt4.BeginAnimation(RotateTransform.AngleProperty, a4);
@@ -131,12 +141,6 @@ namespace NcoreComponent.Controls
             });
             thread.Start();
             thread.IsBackground = true;
-
-            SetScale();
-            Needle3();
-            Needle1();
-            Needle2();
-            Triangle();
         }
 
         private double RandomCount()
@@ -220,7 +224,6 @@ namespace NcoreComponent.Controls
                 case "DValue4":
                     SetAnimation(value, needle4);
                     break;
-
             }
         }
         #endregion
