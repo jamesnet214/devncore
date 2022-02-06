@@ -13,7 +13,6 @@ namespace DevNcore.WPF.Controls
         public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(NcoreIcon), new PropertyMetadata(new CornerRadius(0, 0, 0, 0)));
         public static readonly DependencyProperty GeometryWidthProperty = DependencyProperty.Register("GeometryWidth", typeof(double), typeof(NcoreIcon), new PropertyMetadata(0.0));
         public static readonly DependencyProperty GeometryHeightProperty = DependencyProperty.Register("GeometryHeight", typeof(double), typeof(NcoreIcon), new PropertyMetadata(0.0));
-
         public Geometry Data
         {
             get => (Geometry)GetValue(DataProperty);
