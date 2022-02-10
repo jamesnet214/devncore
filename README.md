@@ -2,7 +2,7 @@
 
 - [x] Features
 - [x] Nuget Package
-- [x] Documentation
+- [x] Getting Started
 
 ## Features
 
