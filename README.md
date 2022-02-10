@@ -1,6 +1,9 @@
 ## DevNcore Framework
 
-## Nuget Package
+- [x] Documentation
+- [x] NugetPackage
+
+## Getting Started
 
 <a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
 
