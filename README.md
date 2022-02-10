@@ -1,7 +1,10 @@
-## DevNcore Framework
+# DevNcore Framework
 
+- [x] Features
 - [x] Documentation
 - [x] Nuget Package
+
+## Features
 
 ## Getting Started
 
