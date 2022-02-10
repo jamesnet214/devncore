@@ -1,8 +1,8 @@
 # DevNcore Framework
 
 - [x] Features
-- [x] Documentation
 - [x] Nuget Package
+- [x] Documentation
 
 ## Features
 
