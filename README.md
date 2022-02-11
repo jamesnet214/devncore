@@ -1,16 +1,10 @@
 # DevNcore Framework
 
 - [x] Overview
-- [x] Features
-- [x] DLLs 
 - [x] Nuget Package
 - [x] Getting Started
 
 ## Overview
-
-## Features
-
-## DLLs
 
 ## Nuget Package
 - DevNcore.WPF
