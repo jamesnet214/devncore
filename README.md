@@ -16,5 +16,5 @@
 ## Getting Started
 
 ## MVVM
-- ObservableModel
 - [x] ObservanleObject
+- [x] ObservableModel
