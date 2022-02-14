@@ -5,7 +5,7 @@
 - [x] Getting Started
 
 ## Overview
-
+TBD...
 ## Nuget Package
 - DevNcore.WPF
 - DevNcore.UI.Design
