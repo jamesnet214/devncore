@@ -7,7 +7,6 @@
 ## Overview
 TBD...
 
-
 ## Nuget Package
 - DevNcore.WPF
 - DevNcore.UI.Design
