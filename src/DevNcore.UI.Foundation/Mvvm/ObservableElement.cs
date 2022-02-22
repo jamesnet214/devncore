@@ -1,25 +1,25 @@
-﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows;
+﻿using System.Windows;
 
 namespace DevNcore.UI.Foundation.Mvvm
 {
-    internal abstract class ObservableObject : ObservableModel, IDevNcoreObservablePresentater
+    public class ObservableElement : ObservableModel
     {
         protected FrameworkElement View { get; private set; }
-        public Action<FrameworkElement> RegistElement { get; set; }
 
-        public ObservableObject()
-        {
-            RegistElement = Initialize;
-        }
-
-        private void Initialize(FrameworkElement view)
+        public void ForceLoaded(FrameworkElement view)
         {
             View = view;
             InitializedComponont();
+
             OnLoaded();
+        }
+
+        public void ForceViewLoaded(FrameworkElement view)
+        {
+            View = view;
+            InitializedComponont();
+
+            OnViewLoaded();
         }
 
         private void InitializedComponont()
