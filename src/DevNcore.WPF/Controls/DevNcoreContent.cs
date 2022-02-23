@@ -1,5 +1,4 @@
 ﻿using DevNcore.UI.Foundation.Mvvm;
-using System;
 using System.Windows;
 using System.Windows.Controls;
 
