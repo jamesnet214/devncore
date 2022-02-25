@@ -19,3 +19,4 @@ TBD...
 ## MVVM
 - [x] ObservanleObject
 - [x] ObservableModel
+- [x] ObservableElement
