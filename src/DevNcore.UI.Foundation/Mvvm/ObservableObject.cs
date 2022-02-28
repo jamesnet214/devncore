@@ -10,26 +10,16 @@ namespace DevNcore.UI.Foundation.Mvvm
 
         public ObservableObject()
         {
-            RegistElement = OnInitializeComponent;
+            RegistElement = OnInitializedComponent;
         }
 
-        protected void OnInitializeComponent(FrameworkElement view)
+        protected virtual void OnInitializedComponent(FrameworkElement view)
         {
             View = view;
             view.Loaded += OnLoaded;
         }
 
         protected virtual void OnLoaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        protected virtual void OnViewLoaded()
-        {
-
-        }
-
-        protected virtual void OnInitializedComponent()
         {
 
         }
