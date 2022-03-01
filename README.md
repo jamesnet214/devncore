@@ -16,6 +16,6 @@ TBD...
 ## Getting Started
 
 ## MVVM
-- [x] ObservanleObject
 - [x] ObservableModel
-- [x] ObservableElement
+- [x] ObservanleObject ?
+- [x] ObservableElement ?
