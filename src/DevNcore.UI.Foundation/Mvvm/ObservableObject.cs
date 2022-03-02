@@ -3,7 +3,7 @@ using System.Windows;
 
 namespace DevNcore.UI.Foundation.Mvvm
 {
-    internal abstract class ObservableObject : ObservableModel, IDevNcoreObservablePresentater
+    public abstract class ObservableObject : ObservableModel, IDevNcoreObservablePresentater
     {
         protected FrameworkElement View { get; private set; }
         public Action<FrameworkElement> RegistElement { get; set; }
