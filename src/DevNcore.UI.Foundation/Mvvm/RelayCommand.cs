@@ -5,7 +5,6 @@ namespace DevNcore.UI.Foundation.Mvvm
 {
     public class RelayCommand<T> : ICommand
     {
-
         readonly Action<T> _execute = null;
         readonly Predicate<T> _canExecute = null;
 
