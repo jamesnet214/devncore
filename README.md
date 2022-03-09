@@ -4,7 +4,7 @@
 - [x] Getting Started
 
 ## Overview
-.NET Core WPF 
+.NET Core WPF  
 TBD...
 
 ## Nuget Package
