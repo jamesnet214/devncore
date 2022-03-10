@@ -4,6 +4,7 @@
 - [x] Getting Started
 
 ## Overview
+.NET Core WPF  
 TBD...
 
 ## Nuget Package
@@ -19,3 +20,6 @@ TBD...
 - [x] ObservableModel
 - [x] ObservanleObject ?
 - [x] ObservableElement ?
+
+
+TBD...
