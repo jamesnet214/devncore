@@ -1,5 +1,5 @@
-﻿using DevNcore.UI.Design.Controls.Primitives;
-using System.Windows;
+﻿using System.Windows;
+using DevNcore.UI.Design.Controls.Primitives;
 
 namespace DevNcore.UI.Design.Controls
 {
