@@ -5,7 +5,7 @@
 
 ## Overview
 .NET Core WPF  
-TBD...
+
 
 ## Nuget Package
 - DevNcore.WPF
