@@ -8,7 +8,17 @@ namespace DevNcore.WPF.Controls
     {
         public DevNcoreContent()
         {
-            OnRegistElement();
+            
+        }
+
+        protected override void OnContentChanged(object oldContent, object newContent)
+        {
+            base.OnContentChanged(oldContent, newContent);
+
+            if (newContent is IDevNcoreObservablePresentater vm) 
+            {
+                OnRegistElement();
+            }
         }
 
         protected virtual void OnRegistElement()
