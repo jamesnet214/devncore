@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Design.Converte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.UI.Design", "DevNcore.UI.Design\DevNcore.UI.Design.csproj", "{79877AB9-8219-4D02-B542-46263A57583F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevNcore.WPF.Framework", "DevNcore.WPF.Framework", "{C57C59F1-1326-4DF0-9967-5AEE2652B6E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevNcore.WPF.LeagueoflegendsTheme", "DevNcore.WPF.LeagueoflegendsTheme", "{52BD1140-7B54-4F51-AC93-932D539BD94A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevNcore.LayoutSupport.Leagueoflegends", "DevNcore.LayoutSupport.Leagueoflegends\DevNcore.LayoutSupport.Leagueoflegends.csproj", "{479F36D9-31F7-4F10-B782-A9C7A468019D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +45,21 @@ Global
 		{79877AB9-8219-4D02-B542-46263A57583F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79877AB9-8219-4D02-B542-46263A57583F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79877AB9-8219-4D02-B542-46263A57583F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479F36D9-31F7-4F10-B782-A9C7A468019D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479F36D9-31F7-4F10-B782-A9C7A468019D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479F36D9-31F7-4F10-B782-A9C7A468019D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479F36D9-31F7-4F10-B782-A9C7A468019D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F59B35E7-C01D-4593-B1B5-AC654957A2C0} = {C57C59F1-1326-4DF0-9967-5AEE2652B6E0}
+		{04AF442D-FBCC-46EF-8A90-A881DD3F39B9} = {C57C59F1-1326-4DF0-9967-5AEE2652B6E0}
+		{13349214-9CA3-4647-A341-F9C5C825184E} = {C57C59F1-1326-4DF0-9967-5AEE2652B6E0}
+		{68BDD357-6109-46DF-BC85-E03248572C8B} = {C57C59F1-1326-4DF0-9967-5AEE2652B6E0}
+		{79877AB9-8219-4D02-B542-46263A57583F} = {C57C59F1-1326-4DF0-9967-5AEE2652B6E0}
+		{479F36D9-31F7-4F10-B782-A9C7A468019D} = {52BD1140-7B54-4F51-AC93-932D539BD94A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC233DA0-7B00-4D26-A709-78F2612BE46D}
