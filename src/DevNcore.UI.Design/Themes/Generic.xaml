@@ -47,6 +47,21 @@
     <Style TargetType="{x:Type icons:AlphaABoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaABox}"/>
     </Style>
+    <Style TargetType="{x:Type icons:AlphaBBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaBBox}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaDBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaDBox}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaGBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaGBox}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaRBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaRBox}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphaUBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource AlphaUBox}"/>
+    </Style>
     <Style TargetType="{x:Type icons:LanguageMarkdownOutlineIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource LanguageMarkdownOutline}"/>
     </Style>
@@ -79,5 +94,8 @@
     </Style>
     <Style TargetType="{x:Type icons:EyeDropperIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource EyeDropper}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:MinimizeIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Minimize}"/>
     </Style>
 </ResourceDictionary>

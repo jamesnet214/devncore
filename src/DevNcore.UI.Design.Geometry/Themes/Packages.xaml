@@ -2,10 +2,13 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaABox.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaBBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaDBox.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaGBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaRBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/ALphaUBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Close.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/EyeDropper.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/File.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/FileZip.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Folder.xaml"/>
@@ -15,6 +18,8 @@
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/LanguageMarkdownOutline.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/MenuDown.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/MenuRight.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Minimize.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Paste.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/ShapeCirclePlus.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
