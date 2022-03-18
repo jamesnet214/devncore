@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controls\Primitives\**" />
+    <Compile Remove="Controls\Riotbase\**" />
+    <EmbeddedResource Remove="Controls\Primitives\**" />
+    <EmbeddedResource Remove="Controls\Riotbase\**" />
+    <None Remove="Controls\Primitives\**" />
+    <None Remove="Controls\Riotbase\**" />
+    <Page Remove="Controls\Primitives\**" />
+    <Page Remove="Controls\Riotbase\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+
+</Project>
