@@ -74,4 +74,10 @@
     <Style TargetType="{x:Type icons:FileZipIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource FileZip}"/>
     </Style>
+    <Style TargetType="{x:Type icons:PasteIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Paste}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:EyeDropperIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource EyeDropper}"/>
+    </Style>
 </ResourceDictionary>
