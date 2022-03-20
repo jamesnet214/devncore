@@ -14,6 +14,9 @@
 - DevNcore.UI.Design.Converter
 - DevNcore.UI.Design.Geometry
 
+## LayoutSupport
+- DevNcore.LayoutSupport.Leagueoflegends
+
 ## Getting Started
 
 ## MVVM
