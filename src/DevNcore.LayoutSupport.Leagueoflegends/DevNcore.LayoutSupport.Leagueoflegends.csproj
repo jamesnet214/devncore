@@ -5,13 +5,15 @@
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <PackageProjectUrl>https://devncore.org</PackageProjectUrl>
+    <Copyright>https://github.com/devncore/devncore</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevNcore.UI.Design" Version="1.0.5" />
+    <PackageReference Include="DevNcore.UI.Design" Version="1.0.6" />
     <PackageReference Include="DevNcore.UI.Design.Converter" Version="1.0.0" />
-    <PackageReference Include="DevNcore.UI.Design.Geometry" Version="1.0.5" />
+    <PackageReference Include="DevNcore.UI.Design.Geometry" Version="1.0.6" />
     <PackageReference Include="DevNcore.UI.Foundation" Version="1.0.2" />
     <PackageReference Include="DevNcore.WPF" Version="1.0.3" />
   </ItemGroup>
