@@ -4,13 +4,15 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-	<AssemblyVersion>1.0.0.1</AssemblyVersion>
-	<FileVersion>1.0.1</FileVersion>
+	<AssemblyVersion>1.0.6</AssemblyVersion>
+	<FileVersion>1.0.6</FileVersion>
 	<PackageId>DevNcore.UI.Design.Geometry</PackageId>
-	<Version>1.0.5</Version>
+	<Version>1.0.6</Version>
 	<Authors>DevNcore</Authors>
 	<Company>DevNcore</Company>
 	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
+	<PackageProjectUrl>https://devncore.org</PackageProjectUrl>
+	<Copyright>https://github.com/devncore/devncore</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
