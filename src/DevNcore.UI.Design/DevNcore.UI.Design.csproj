@@ -4,14 +4,14 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <AssemblyVersion>1.0.6</AssemblyVersion>
-    <FileVersion>1.0.6</FileVersion>
+    <AssemblyVersion>1.0.7</AssemblyVersion>
+    <FileVersion>1.0.7</FileVersion>
 	<PackageId>DevNcore.UI.Design</PackageId>
-	<Version>1.0.6</Version>
+	<Version>1.0.7</Version>
 	<Authors>DevNcore</Authors>
 	<Company>DevNcore</Company>
 	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
-	<Copyright>https://github.com/devncore/devncore</Copyright>
+	<Copyright>James Lee</Copyright>
 	<PackageProjectUrl>https://devncore.org</PackageProjectUrl>
   </PropertyGroup>
 

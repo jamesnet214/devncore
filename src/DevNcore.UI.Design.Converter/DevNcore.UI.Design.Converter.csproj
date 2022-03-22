@@ -11,6 +11,7 @@
 	<Authors>DevNcore</Authors>
 	<Company>DevNcore</Company>
 	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
+	<Copyright>James Lee</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
