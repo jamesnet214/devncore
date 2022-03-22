@@ -4,14 +4,15 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-	<AssemblyVersion>1.0.0.1</AssemblyVersion>
-	<FileVersion>1.0.1</FileVersion>
+	<AssemblyVersion>1.0.4</AssemblyVersion>
+	<FileVersion>1.0.4</FileVersion>
 	<PackageId>DevNcore.WPF</PackageId>
-	<Version>1.0.3</Version>
+	<Version>1.0.4</Version>
 	<Authors>DevNcore</Authors>
 	<Company>DevNcore</Company>
 	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Copyright>James Lee</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

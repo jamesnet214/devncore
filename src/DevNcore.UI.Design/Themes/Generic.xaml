@@ -71,6 +71,9 @@
     <Style TargetType="{x:Type icons:CloseIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource Close}"/>
     </Style>
+    <Style TargetType="{x:Type icons:EmailSendIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource EmailSend}"/>
+    </Style>
     <Style TargetType="{x:Type icons:EyeDropperIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource EyeDropper}"/>
     </Style>
@@ -95,6 +98,9 @@
     <Style TargetType="{x:Type icons:LanguageMarkdownOutlineIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource LanguageMarkdownOutline}"/>
     </Style>
+    <Style TargetType="{x:Type icons:LogoutVariantIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource LogoutVariant}"/>
+    </Style>
     <Style TargetType="{x:Type icons:MenuDownIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource MenuDown}"/>
     </Style>
@@ -109,6 +115,9 @@
     </Style>
     <Style TargetType="{x:Type icons:PlayIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource Play}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:ReactIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource React}"/>
     </Style>
     <Style TargetType="{x:Type icons:ShapeCirclePlusIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource ShapeCirclePlus}"/>

@@ -10,6 +10,7 @@
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/CheckBold.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/CircleOutline.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Close.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/EmailSend.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/EyeDropper.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/File.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/FileZip.xaml"/>
@@ -18,11 +19,13 @@
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/GitHub.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/History.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/LanguageMarkdownOutline.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/LogoutVariant.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/MenuDown.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/MenuRight.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Minimize.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Paste.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Play.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/React.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/ShapeCirclePlus.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/TriangleOutline.xaml"/>
     </ResourceDictionary.MergedDictionaries>
