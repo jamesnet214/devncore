@@ -62,6 +62,9 @@
     <Style TargetType="{x:Type icons:AlphaUBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaUBox}"/>
     </Style>
+    <Style TargetType="{x:Type icons:AppleIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Apple}"/>
+    </Style>
     <Style TargetType="{x:Type icons:CheckBoldIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource CheckBold}"/>
     </Style>
