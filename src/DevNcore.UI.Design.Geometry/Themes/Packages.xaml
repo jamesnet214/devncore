@@ -7,6 +7,7 @@
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaGBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/AlphaRBox.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/ALphaUBox.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Apple.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/CheckBold.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/CircleOutline.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Close.xaml"/>
