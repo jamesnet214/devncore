@@ -21,7 +21,7 @@
 
 ## MVVM
 - [x] ObservableModel
-- [x] ObservanleObject ?
+- [x] ObservableObject ?
 - [x] ObservableElement ?
 
 
