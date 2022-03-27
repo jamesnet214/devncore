@@ -110,11 +110,14 @@
     <Style TargetType="{x:Type icons:MenuRightIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource MenuRight}"/>
     </Style>
-    <Style TargetType="{x:Type icons:MinimizeIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
-        <Setter Property="Data" Value="{StaticResource Minimize}"/>
-    </Style>
     <Style TargetType="{x:Type icons:MicrosoftVisualStudioCodeIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource MicrosoftVisualStudioCode}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:MicrosoftWindowsClassicIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource MicrosoftWindowsClassic}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:MinimizeIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Minimize}"/>
     </Style>
     <Style TargetType="{x:Type icons:PasteIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource Paste}"/>
