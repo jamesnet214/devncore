@@ -43,14 +43,14 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style TargetType="{x:Type icons:AlphabetOutlineIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
-        <Setter Property="Data" Value="{DynamicResource AlphaABox}"/>
-    </Style>
     <Style TargetType="{x:Type icons:AlphaABoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaABox}"/>
     </Style>
     <Style TargetType="{x:Type icons:AlphaBBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaBBox}"/>
+    </Style>
+    <Style TargetType="{x:Type icons:AlphabetOutlineIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{DynamicResource AlphaABox}"/>
     </Style>
     <Style TargetType="{x:Type icons:AlphaDBoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaDBox}"/>
