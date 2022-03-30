@@ -22,6 +22,7 @@
 | Name | Description |
 |:----|:-------------|
 | GitHubIcon | |
+| MicrosoftWindowsClassicIcon |   |
 
 ## Getting Started
 
