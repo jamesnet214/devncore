@@ -17,6 +17,12 @@
 ## LayoutSupport
 - DevNcore.LayoutSupport.Leagueoflegends
 
+## Icon
+
+| Name | Description |
+|:----|:-------------|
+| GitHubIcon | |
+
 ## Getting Started
 
 ## MVVM
