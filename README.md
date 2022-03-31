@@ -23,6 +23,7 @@
 |:----|:-------------|
 | GitHubIcon | |
 | MicrosoftWindowsClassicIcon |   |
+| MicrosoftVisualStudioCode   |   |
 
 ## Getting Started
 
