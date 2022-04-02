@@ -25,7 +25,7 @@
 | MicrosoftWindowsClassicIcon |   |
 | MicrosoftVisualStudioCode   |   |
 | MicrosoftVisualStudio   |   |
-
+| Xbox |  |
 ## Getting Started
 
 ## MVVM
