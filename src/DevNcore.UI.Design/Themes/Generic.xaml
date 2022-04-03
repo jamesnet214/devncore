@@ -133,6 +133,9 @@
     <Style TargetType="{x:Type icons:ShapeCirclePlusIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource ShapeCirclePlus}"/>
     </Style>
+    <Style TargetType="{x:Type icons:StarIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
+        <Setter Property="Data" Value="{StaticResource Star}"/>
+    </Style>
     <Style TargetType="{x:Type icons:TriangleOutlineIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource TriangleOutline}"/>
     </Style>
