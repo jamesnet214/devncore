@@ -17,6 +17,15 @@
 ## LayoutSupport
 - DevNcore.LayoutSupport.Leagueoflegends
 
+## Icon
+
+| Name | Description |
+|:----|:-------------|
+| GitHubIcon | |
+| MicrosoftWindowsClassicIcon |   |
+| MicrosoftVisualStudioCode   |   |
+| MicrosoftVisualStudio   |   |
+| Xbox |  |
 ## Getting Started
 
 ## MVVM
