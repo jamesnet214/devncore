@@ -8,14 +8,13 @@ namespace DevNcore.WPF.Controls
     {
         public DevNcoreContent()
         {
-            
+            DataContextChanged += DevNcoreContent_DataContextChanged;    
         }
 
-        protected override void OnContentChanged(object oldContent, object newContent)
+        private void DevNcoreContent_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            base.OnContentChanged(oldContent, newContent);
 
-            if (newContent is IDevNcoreObservablePresentater vm) 
+            if (DataContext is IDevNcoreObservablePresentater vm)
             {
                 OnRegistElement();
             }
