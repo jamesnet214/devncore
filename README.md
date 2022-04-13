@@ -11,8 +11,7 @@
 - [DevNcore.UI.Design](https://github.com)
 - [DevNcore.UI.Foundation](https://github.com)
 - [DevNcore.UI.Design.Converter](https://github.com)
-- [DevNcore.UI.Design.Geometry](https://github.com)
-- 
+- [DevNcore.UI.Design.Geometry](https://github.com) 
 
 ## LayoutSupport
 - DevNcore.LayoutSupport.Leagueoflegends
