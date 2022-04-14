@@ -5,9 +5,11 @@
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.8</Version>
     <PackageProjectUrl>https://devncore.org</PackageProjectUrl>
     <Copyright>James Lee</Copyright>
+	  <Authors>James Lee</Authors>
+	  <Company>DevNcore</Company>
   </PropertyGroup>
 
   <ItemGroup>
