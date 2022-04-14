@@ -1,5 +1,4 @@
-﻿using DevNcore.UI.Foundation.Mvvm;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace DevNcore.WPF.Controls

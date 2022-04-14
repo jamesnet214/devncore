@@ -15,4 +15,8 @@
 	<Copyright>James Lee</Copyright>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DevNcore.WPF\DevNcore.WPF.csproj" />
+  </ItemGroup>
+
 </Project>

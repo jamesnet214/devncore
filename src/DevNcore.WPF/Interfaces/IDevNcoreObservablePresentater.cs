@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace DevNcore.UI.Foundation.Mvvm
+namespace DevNcore.WPF.Controls
 {
     public interface IDevNcoreObservablePresentater
     {
