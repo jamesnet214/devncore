@@ -1,12 +1,14 @@
 ﻿using DevNcore.WPF.Controls;
 using System;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace DevNcore.UI.Foundation.Mvvm
 {
     public abstract class ObservableObject : ObservableModel, IDevNcoreObservablePresentater
     {
         protected FrameworkElement View { get; private set; }
+
         public Action<FrameworkElement> RegistElement { get; set; }
 
         public ObservableObject()
