@@ -18,17 +18,18 @@
 
 ## Icon
 
-| Name | GeometryPack |
-|:----|:-------------|
-| AlphaABox | ✔️ |
-| AlphaBBox | ✔️ |
-| AlphaDBox | ✔️ |
-| GitHubIcon | ✔️ |
-| MicrosoftWindowsClassicIcon | ✔️ |
-| MicrosoftVisualStudioCode   | ✔️ |
-| MicrosoftVisualStudio   | ✔️ |
-| Xbox | ✔️ |
-## Getting Started
+| Name                        | GeometryPack |
+|:----------------------------|:------------:|
+| AlphaABox                   | ✔️            |
+| AlphaBBox                   | ✔️            |
+| AlphaDBox                   | ✔️            |
+| GitHubIcon                  | ✔️            |
+| MicrosoftWindowsClassicIcon | ✔️            |
+| MicrosoftVisualStudioCode   | ✔️            |
+| MicrosoftVisualStudio       | ✔️            |
+| Xbox                        | ✔️            |
+
+## Getting Started           
 
 ## MVVM
 - [x] ObservableModel
