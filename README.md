@@ -24,6 +24,22 @@ DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 | AlphaABox                   | ✔️            |
 | AlphaBBox                   | ✔️            |
 | AlphaDBox                   | ✔️            |
+| AlphaGBox                   | ✔️            |
+| AlphaRBox                   | ✔️            |
+| AlphaUBox                   | ✔️            |
+| Apple                   | ✔️            |
+| CheckBold                   | ✔️            |
+| CircleOutline                   | ✔️            |
+| Close                   | ✔️            |
+| EmailSend                   | ✔️            |
+| EyeDropper                   | ✔️            |
+| File                   | ✔️            |
+| FileZip                   | ✔️            |
+| Folder                   | ✔️            |
+| Git                   | ✔️            |
+| GitHub                   | ✔️            |
+| History                   | ✔️            |
+
 | GitHubIcon                  | ✔️            |
 | MicrosoftWindowsClassicIcon | ✔️            |
 | MicrosoftVisualStudioCode   | ✔️            |
