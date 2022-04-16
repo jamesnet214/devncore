@@ -18,13 +18,16 @@
 
 ## Icon
 
-| Name | Description |
+| Name | GeometryPack |
 |:----|:-------------|
-| GitHubIcon | |
-| MicrosoftWindowsClassicIcon |   |
-| MicrosoftVisualStudioCode   |   |
-| MicrosoftVisualStudio   |   |
-| Xbox |  |
+| AlphaABox | ✔️ |
+| AlphaBBox | ✔️ |
+| AlphaDBox | ✔️ |
+| GitHubIcon | ✔️ |
+| MicrosoftWindowsClassicIcon | ✔️ |
+| MicrosoftVisualStudioCode   | ✔️ |
+| MicrosoftVisualStudio   | ✔️ |
+| Xbox | ✔️ |
 ## Getting Started
 
 ## MVVM
