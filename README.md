@@ -19,8 +19,8 @@
 ## Icon
 DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 
-| Name                        | GeometryPack | Original                                                  |
-|:----------------------------|:------------:| :-------------------------------------------------------- |
+| Name                        | GeometryPack | NcoreIcon | Original                                                  |
+|:----------------------------|:------------:|:---------:|:--------------------------------------------------------  |
 | AlphaABox                   | ✔️            | [Material Design Icons](https://materialdesignicons.com/) | 
 | AlphaBBox                   | ✔️            | [Material Design Icons](https://materialdesignicons.com/) |
 | AlphaDBox                   | ✔️            | [Material Design Icons](https://materialdesignicons.com/) |
