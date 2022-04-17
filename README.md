@@ -49,8 +49,14 @@ DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 
 ## MVVM
 - [x] ObservableModel
-- [x] ObservableObject ?
-- [x] ObservableElement ?
+- [x] ObservableObject
+- [x] ObservableElement
+
+```
+ObservableModel
+    ObsrvableObject
+        ObservableElement
+```
 
 
 TBD...
