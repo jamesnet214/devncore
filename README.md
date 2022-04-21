@@ -6,7 +6,7 @@
 ## Overview
 .NET Core WPF  
 
-## Nuget Package
+## Nuget Package (1.0.9)
 - [DevNcore.WPF](https://github.com)
 - [DevNcore.UI.Design](https://github.com)
 - [DevNcore.UI.Foundation](https://github.com)
