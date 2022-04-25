@@ -69,4 +69,8 @@ ObservableModel
 
 ## ObservableObject
 
+ObservableObject : ObservableModel
+
 ## ObservableElement
+
+ObservableElement : ObservableObject
