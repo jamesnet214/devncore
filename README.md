@@ -44,6 +44,8 @@ DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 | MicrosoftVisualStudioCode   | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | MicrosoftVisualStudio       | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | Xbox                        | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
+| ToggleSwitch                | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
+| ToggleSwitchOff             | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 
 ## Getting Started           
 
