@@ -6,6 +6,8 @@
 ## Overview
 .NET Core WPF  
 
+<br/>
+
 ## Nuget Package (1.0.9)
 - [DevNcore.WPF](https://github.com)
 - [DevNcore.UI.Design](https://github.com)
@@ -44,8 +46,6 @@ DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 | MicrosoftVisualStudioCode   | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | MicrosoftVisualStudio       | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | Xbox                        | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
-| ToggleSwitch                | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
-| ToggleSwitchOff             | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 
 ## Getting Started           
 
@@ -59,14 +59,3 @@ ObservableModel
     ObsrvableObject
         ObservableElement
 ```
-
-
-## ObservableModel
-
-## ObservableObject
-
-ObservableObject : ObservableModel
-
-## ObservableElement
-
-ObservableElement : ObservableObject
