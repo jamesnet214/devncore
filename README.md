@@ -1,4 +1,4 @@
-# DevNcore Framework
+# DevNcore
 - [x] Overview
 - [x] Nuget Package
 - [x] Getting Started
