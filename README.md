@@ -14,10 +14,10 @@
 
 ## Nuget Package (1.0.9)
 - [DevNcore.WPF](https://www.nuget.org/packages/DevNcore.WPF/)
-- [DevNcore.UI.Design](https://github.com)
-- [DevNcore.UI.Foundation](https://github.com)
-- [DevNcore.UI.Design.Converter](https://github.com)
-- [DevNcore.UI.Design.Geometry](https://github.com) 
+- [DevNcore.UI.Design](https://www.nuget.org/packages/DevNcore.WPF/)
+- [DevNcore.UI.Foundation](https://www.nuget.org/packages/DevNcore.WPF/)
+- [DevNcore.UI.Design.Converter](https://www.nuget.org/packages/DevNcore.WPF/)
+- [DevNcore.UI.Design.Geometry](https://www.nuget.org/packages/DevNcore.WPF/) 
 
 ## LayoutSupport
 - DevNcore.LayoutSupport.Leagueoflegends
