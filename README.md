@@ -1,6 +1,6 @@
 # DevNcore
 - [English](#english) 
-- [한국어](#한국어)
+- [Korean](#한국어)
 
 #### 프레임워크
 - [x] Overview
