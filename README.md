@@ -1,4 +1,4 @@
-# DevNcore
+# DevNcore 프레임워크
 - [English](#english) 
 - [Korean](#한국어)
 
