@@ -1,23 +1,31 @@
-# DevNcore 프레임워크
-- [English](#english) 
-- [Korean](#한국어)
+# DevNcore
+- [English](#) 
+- [Korean](#)
 
-#### 프레임워크
-- [x] Overview
-- [x] Nuget Package
+## 내용
+- [x] 소개
+- [x] 라이브러리
+- [x] Nuget Packages
 - [x] Getting Started
 
-## Overview
-.NET Core WPF  
+## 소개
+DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 
-<br/>
-
-## Class Library
+## 라이브러리
 - [DevNcore.WPF](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Design](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Foundation](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Design.Converter](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Design.Geometry](https://www.nuget.org/packages/DevNcore.WPF/) 
+
+## Nuget Packages
+| 이름 | 버전 |
+|:----|:---:|
+| DevNcore.WPF | 1.0.9 |
+| DevNcore.UI.Design | 1.0.9 |
+| DevNcore.UI.Foundation | 1.0.9 |
+| DevNcore.UI.Design.Converter | 1.0.9 |
+| DevNcore.UI.Design.Geometry | 1.0.9 |
 
 ## LayoutSupport
 - DevNcore.LayoutSupport.Leagueoflegends
