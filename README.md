@@ -19,6 +19,7 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 - [DevNcore.UI.Design.Geometry](https://www.nuget.org/packages/DevNcore.WPF/) 
 
 ## Nuget Packages
+지속적으로 버전을 추가하고 있습니다.
 | 이름 | 버전 |
 |:----|:---:|
 | DevNcore.WPF | 1.0.9 |
