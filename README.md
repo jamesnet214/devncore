@@ -12,7 +12,7 @@
 
 <br/>
 
-## Nuget Package (1.0.9)
+## Class Library
 - [DevNcore.WPF](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Design](https://www.nuget.org/packages/DevNcore.WPF/)
 - [DevNcore.UI.Foundation](https://www.nuget.org/packages/DevNcore.WPF/)
