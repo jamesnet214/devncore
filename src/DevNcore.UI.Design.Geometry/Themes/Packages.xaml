@@ -32,5 +32,6 @@
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/ShapeCirclePlus.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Star.xaml"/>
         <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/TriangleOutline.xaml"/>
+        <ResourceDictionary Source="/DevNcore.UI.Design.Geometry;component/Themes/Geometries/Geometries.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

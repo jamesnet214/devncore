@@ -43,6 +43,7 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
     <Style TargetType="{x:Type icons:AlphaABoxIcon}" BasedOn="{StaticResource {x:Type prims:Icon}}">
         <Setter Property="Data" Value="{StaticResource AlphaABox}"/>
     </Style>
