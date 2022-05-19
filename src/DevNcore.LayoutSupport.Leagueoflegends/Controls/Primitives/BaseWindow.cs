@@ -1,5 +1,4 @@
-﻿using DevNcore.LayoutSupport.Leagueoflegends.Controls;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
 namespace DevNcore.LayoutSupport.Leagueoflegends.Controls.Primitives
 {

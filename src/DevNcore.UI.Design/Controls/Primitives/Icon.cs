@@ -3,7 +3,7 @@ using System.Windows;
 
 namespace DevNcore.UI.Design.Controls.Primitives
 {
-    public class Icon : NcoreIcon
+    public class Icon : DevNcoreIcon
     {
         static Icon()
         {

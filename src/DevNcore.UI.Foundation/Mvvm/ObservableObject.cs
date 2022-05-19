@@ -1,7 +1,6 @@
 ﻿using DevNcore.WPF.Controls;
 using System;
 using System.Windows;
-using System.Windows.Threading;
 
 namespace DevNcore.UI.Foundation.Mvvm
 {

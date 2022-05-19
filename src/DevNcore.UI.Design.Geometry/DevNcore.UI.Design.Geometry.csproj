@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
 	<AssemblyVersion>1.0.9</AssemblyVersion>
 	<FileVersion>1.0.9</FileVersion>
