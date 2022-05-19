@@ -4,15 +4,15 @@ using System.Windows.Media;
 
 namespace DevNcore.WPF.Controls
 {
-    public class NcoreIcon : Control
+    public class DevNcoreIcon : Control
     {
-        public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data", typeof(Geometry), typeof(NcoreIcon), new PropertyMetadata(null));
-        public static readonly DependencyProperty FillProperty = DependencyProperty.Register("Fill", typeof(Brush), typeof(NcoreIcon), new PropertyMetadata(null));
-        public static readonly DependencyProperty StrokeProperty = DependencyProperty.Register("Stroke", typeof(Brush), typeof(NcoreIcon), new PropertyMetadata(null));
-        public static readonly DependencyProperty StrokeThicknessProperty = DependencyProperty.Register("StrokeThickness", typeof(Thickness), typeof(NcoreIcon), new PropertyMetadata(new Thickness(0, 0, 0, 0)));
-        public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(NcoreIcon), new PropertyMetadata(new CornerRadius(0, 0, 0, 0)));
-        public static readonly DependencyProperty GeometryWidthProperty = DependencyProperty.Register("GeometryWidth", typeof(double), typeof(NcoreIcon), new PropertyMetadata(0.0));
-        public static readonly DependencyProperty GeometryHeightProperty = DependencyProperty.Register("GeometryHeight", typeof(double), typeof(NcoreIcon), new PropertyMetadata(0.0));
+        public static readonly DependencyProperty DataProperty = DependencyProperty.Register("Data", typeof(Geometry), typeof(DevNcoreIcon), new PropertyMetadata(null));
+        public static readonly DependencyProperty FillProperty = DependencyProperty.Register("Fill", typeof(Brush), typeof(DevNcoreIcon), new PropertyMetadata(null));
+        public static readonly DependencyProperty StrokeProperty = DependencyProperty.Register("Stroke", typeof(Brush), typeof(DevNcoreIcon), new PropertyMetadata(null));
+        public static readonly DependencyProperty StrokeThicknessProperty = DependencyProperty.Register("StrokeThickness", typeof(Thickness), typeof(DevNcoreIcon), new PropertyMetadata(new Thickness(0, 0, 0, 0)));
+        public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(DevNcoreIcon), new PropertyMetadata(new CornerRadius(0, 0, 0, 0)));
+        public static readonly DependencyProperty GeometryWidthProperty = DependencyProperty.Register("GeometryWidth", typeof(double), typeof(DevNcoreIcon), new PropertyMetadata(0.0));
+        public static readonly DependencyProperty GeometryHeightProperty = DependencyProperty.Register("GeometryHeight", typeof(double), typeof(DevNcoreIcon), new PropertyMetadata(0.0));
         public Geometry Data
         {
             get => (Geometry)GetValue(DataProperty);

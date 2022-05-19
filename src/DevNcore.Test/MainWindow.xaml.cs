@@ -10,6 +10,7 @@ namespace DevNcore.Test
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
