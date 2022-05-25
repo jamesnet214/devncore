@@ -1,0 +1,15 @@
+<Style TargetType="{x:Type local:SingleGeometry">
+    <Setter Property="width" value="48"/>
+    <Setter Property="height" Value="48"/>
+    <Setter Property="Template">
+        <setter.Value>
+            <ControlTemplate TargetType="{x:Type Local:SingleGeometry}">
+                <viewBox>
+                    <Canvas>
+                        <Path Data={TemplateBinding Data}/>
+                    </Canvas>
+                </ViewBox>
+            </ControlTemplate>
+        </setter.Value>
+    </Setter>
+</Style>
