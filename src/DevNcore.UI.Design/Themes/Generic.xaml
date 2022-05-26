@@ -46,7 +46,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type prims:MaterialIcon}">
+    <Style TargetType="{x:Type prims:SingleGeometry}">
         <Setter Property="CornerRadius" Value="0 0 0 0"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
         <Setter Property="Background" Value="Transparent"/>
@@ -61,7 +61,7 @@
         <Setter Property="Height" Value="15"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type prims:MaterialIcon}">
+                <ControlTemplate TargetType="{x:Type prims:SingleGeometry}">
                     <Border Background="{TemplateBinding Background}" 
                             CornerRadius="{TemplateBinding CornerRadius}"
                             Padding="{TemplateBinding Padding}">
