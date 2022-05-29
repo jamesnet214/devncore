@@ -65,6 +65,7 @@ DevNcore.UI.Design.Geometry 아이콘 목록입니다.
 | Xbox                        | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 
 ## Getting Started           
+TBD...
 
 ## MVVM
 - [x] ObservableModel
