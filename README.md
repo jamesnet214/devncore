@@ -77,6 +77,3 @@ ObservableModel
     ObsrvableObject
         ObservableElement
 ```
-
-
-TBD...
