@@ -1,15 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>disable</Nullable>
-    <UseWPF>true</UseWPF>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Version>1.0.9</Version>
-    <PackageProjectUrl>https://devncore.org</PackageProjectUrl>
-    <Copyright>James Lee</Copyright>
-	  <Authors>James Lee</Authors>
-	  <Company>DevNcore</Company>
+	<TargetFramework>net6.0-windows</TargetFramework>
+	<Nullable>enable</Nullable>
+	<UseWPF>true</UseWPF>
+	<AssemblyVersion>1.0.9</AssemblyVersion>
+	<FileVersion>1.0.9</FileVersion>
+	<PackageId>DevNcore.LayoutSupport.Leagueoflegends</PackageId>
+	<Version>1.0.9</Version>
+	<Authors>James Lee</Authors>
+	<Company>DevNcore</Company>
+	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
+	<Copyright>James Lee</Copyright>
+	<PackageProjectUrl>https://devncore.org</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
