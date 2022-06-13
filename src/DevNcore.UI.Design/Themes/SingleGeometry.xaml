@@ -1,10 +1,7 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives"
-    xmlns:icons="clr-namespace:DevNcore.UI.Design.Controls"
-    xmlns:geoms="clr-namespace:DevNcore.UI.Design.Geometry;assembly=DevNcore.UI.Design.Geometry"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    xmlns:prims="clr-namespace:DevNcore.UI.Design.Controls.Primitives">
     <Style TargetType="{x:Type prims:SingleGeometry}">
         <Setter Property="Width" Value="48"/>
         <Setter Property="Height" Value="48"/>
