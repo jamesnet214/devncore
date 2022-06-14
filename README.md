@@ -1,16 +1,5 @@
 # DevNcore
-- [English](#) 
-- [Korean](#)
 
----
-
-## 내용
-- [x] 소개
-- [x] 라이브러리
-- [x] Nuget Packages
-- [x] Getting Started
-
-## 소개
 DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 
 ## Nuget Packages
@@ -41,6 +30,7 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 ## Icon
 `DevNcore.UI.Design.Geometry` 패키지의 아이콘 목록입니다.
 
+
 | Name                        | GeometryPack | NcoreIcon | Original                                                  |
 |:----------------------------|:------------:|:---------:|:--------------------------------------------------------  |
 | AlphaABox                   | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) | 
@@ -66,9 +56,6 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 | MicrosoftVisualStudioCode   | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | MicrosoftVisualStudio       | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
 | Xbox                        | ✔️            | ✔️         | [Material Design Icons](https://materialdesignicons.com/) |
-
-## Getting Started           
-TBD...
 
 ## MVVM
 - [x] ObservableModel
