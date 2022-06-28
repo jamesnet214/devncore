@@ -13,7 +13,6 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 | [DevNcore.UI.Design.Geometry][D5] | 1.0.9 |![N5] |
 | [DevNcore.LayoutSupport.Leagueoflegends][D6] | 1.0.9 |![N6] |
 
-----
 
 ## MVVM
 - [x] ObservableModel
