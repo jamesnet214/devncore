@@ -24,7 +24,6 @@ ObservableModel
         ObservableElement
 ```
 
-
 [D1]: https://www.nuget.org/packages/DevNcore.WPF/
 [D2]: https://www.nuget.org/packages/DevNcore.UI.Design/
 [D3]: https://www.nuget.org/packages/DevNcore.UI.Foundation/
