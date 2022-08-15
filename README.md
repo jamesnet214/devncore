@@ -21,7 +21,7 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 
 ```
 ObservableModel
-    ObsrvableObject
+    ObservableObject
         ObservableElement
 ```
 
@@ -38,6 +38,3 @@ ObservableModel
 [N4]: https://img.shields.io/nuget/dt/DevNcore.UI.Design.Converter?color=brightgreen&label=downloads
 [N5]: https://img.shields.io/nuget/dt/DevNcore.UI.Design.Geometry?color=brightgreen&label=downloads
 [N6]: https://img.shields.io/nuget/dt/DevNcore.LayoutSupport.Leagueoflegends?color=brightgreen&label=downloads
-
-
-
