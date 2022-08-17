@@ -18,7 +18,6 @@ DevNcore는 닷넷 코어 기반의 프레임워크입니다.
 - [x] ObservableObject
 - [x] ObservableElement
 
-
 ```
 ObservableModel
     ObservableObject
