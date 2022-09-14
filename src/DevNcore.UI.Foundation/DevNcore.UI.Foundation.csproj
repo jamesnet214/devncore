@@ -4,10 +4,10 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
-	<AssemblyVersion>1.0.9</AssemblyVersion>
-	<FileVersion>1.0.9</FileVersion>
+	<AssemblyVersion>1.1.0</AssemblyVersion>
+	<FileVersion>1.1.0</FileVersion>
 	<PackageId>DevNcore.UI.Foundation</PackageId>
-	<Version>1.0.9</Version>
+	<Version>1.1.0</Version>
 	<Authors>James Lee</Authors>
 	<Company>DevNcore</Company>
 	<RepositoryUrl>https://github.com/devncore/devncore</RepositoryUrl>
